@@ -32,14 +32,18 @@ interface p2 {
 
 const isFavorites = (id: number): boolean => {
 
-    if (typeof window === 'undefined')
-        return false
-
-
+    
     const getlocal: p2[] = JSON.parse(localStorage.getItem('favorites') || '[]')
-    const resultado = getlocal.find(ide => ide.id === id);
 
-    return (resultado)? true : false ;
+
+    let resultado = getlocal.find(ide => ide.id == id);
+    
+
+    if(resultado)
+        return true
+     
+    
+    return false
     
 }
 
