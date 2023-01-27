@@ -19,7 +19,7 @@ export const Navbar = () => {
 
     }}>
       <NLink  href={'/'} passHref style={{display : 'flex' , alignItems : 'flex-start'}}>
-        <Image src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/54.svg' alt='logo' width={40} />
+        <Image src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/54.svg' alt='logo' width={60} />
       <Text h1 >P</Text>
       <Text h2 >okebola</Text>
       </NLink>

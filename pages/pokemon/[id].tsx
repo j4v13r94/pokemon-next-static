@@ -70,8 +70,8 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
                     </Grid>
                     <Grid xs={12} sm={8}>
                         <Card>
-                            <Card.Header css={{ display: 'flex', justifyContent: 'space-between' }}>
-                                <Text h1> {`${pokemon.name}`} </Text>
+                            <Card.Header css={{ display: 'flex', justifyContent: 'center' , flexWrap :'wrap' }} >
+                                <Text h1 css={{ flex : 1 }}> {`${pokemon.name}`} </Text>
                                 <Button color={'gradient'} ghost={isFavorite} onPress={handleClick} autoFocus={false} > {isFavorite ? 'Agregar a' : 'Remover de'} favoritos </Button>
                             </Card.Header>
                             <Card.Body>
