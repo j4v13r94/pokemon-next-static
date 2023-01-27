@@ -21,13 +21,21 @@ interface Props {
 
 const PokemonPage: NextPage<Props> = ({ pokemon }) => {
 
-    const [isFavorite, setisFavorite] = useState( false )
+    const [isFavorite, setisFavorite] = useState<boolean>(true)
 
-    useEffect(() => {
-      
-        setisFavorite(!local.isFavorites(pokemon.id))
-      
-    }, [])
+
+     useEffect( () => {
+
+        
+        setisFavorite( !local.isFavorites( pokemon.id) )
+
+        
+     }
+      , [pokemon.id])
+    
+    
+
+
     
 
     const handleClick = () => {
